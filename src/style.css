@@ -1,0 +1,25 @@
+/* デフォルトの余白を消す */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* 災害情報レイヤーのカラーガイド */
+#hazard-legend {
+    position: absolute;
+    inset: auto 10px 30px auto;
+    overflow: hidden;
+    /* 各ラベルのスタイル */
+    > .label {
+        padding: 10px;
+        text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, 0px 1px 0 #fff, 0-1px 0 #fff, -1px 0 0 #fff, 1px 0 0 #fff;
+        font-size: small;
+    }
+}
