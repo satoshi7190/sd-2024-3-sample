@@ -301,7 +301,7 @@ const updatedLegend = (layerId: string) => {
     // カラーガイドを変更
     legendDiv.innerHTML = guideColor.map((item) => `<div class='label' style='background:${item.color};'>${item.label}</div>`).join('');
 
-    // ポップアップが表示されてる場合は削除
+    // ポップアップが表示されている場合は削除
     popup && popup.remove();
 };
 
