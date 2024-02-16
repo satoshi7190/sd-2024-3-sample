@@ -488,7 +488,7 @@ map.on('click', (e) => {
     const toilet = prop['車椅子使用者対応トイレ']; // トイレ
     const other = prop['その他']; // その他
 
-    // バリアフリー情報を整形　nullの項目は表示しない
+    // バリアフリー情報を整形 nullの項目は表示しない
     let barrierFree = '';
     if (elevation === '○') barrierFree += '<li>エレベーター有り/避難スペースが1階</li>';
     if (slope === '○') barrierFree += '<li>スロープ等有り</li>';
